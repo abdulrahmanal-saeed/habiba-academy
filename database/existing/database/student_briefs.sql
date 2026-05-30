@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS student_briefs (
+    id                    INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    student_id            INT UNSIGNED NULL,
+    student_name          VARCHAR(190) NOT NULL,
+    source_name           VARCHAR(190) NULL,
+    source_email          VARCHAR(190) NULL,
+    nationality           VARCHAR(120) NOT NULL,
+    contracted_hours      VARCHAR(80) NOT NULL,
+    native_language       VARCHAR(120) NOT NULL,
+    studied_arabic_before ENUM('yes','no') NOT NULL DEFAULT 'no',
+    learning_reason       TEXT NOT NULL,
+    main_goal             TEXT NOT NULL,
+    target_duration       VARCHAR(190) NOT NULL,
+    additional_notes      TEXT NULL,
+    submitted_by_role     ENUM('academy','teacher','student') NOT NULL DEFAULT 'academy',
+    created_at            DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at            DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    KEY idx_student_created (student_id, created_at),
+    KEY idx_created_at (created_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

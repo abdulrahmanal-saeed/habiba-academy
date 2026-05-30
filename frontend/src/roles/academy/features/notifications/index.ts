@@ -1,0 +1,1 @@
+export { AcademyNotificationsPage } from './AcademyNotificationsPage'

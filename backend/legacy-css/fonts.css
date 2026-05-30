@@ -1,0 +1,74 @@
+/* ═══════════════════════════════════════════════════════════════════
+   Thmanyah Typeface — @font-face declarations
+   Bilingual: supports Arabic + English in one family
+   Usage:
+     font-family: 'ThmanyahSans'         — UI, buttons, body
+     font-family: 'ThmanyahSerifDisplay' — Big headings / hero
+     font-family: 'ThmanyahSerifText'    — Article body / readable text
+═══════════════════════════════════════════════════════════════════ */
+
+/* ── Thmanyah Sans ──────────────────────────────────────────────── */
+@font-face {
+  font-family: 'ThmanyahSans';
+  src: url('/assets/fonts/thmanyah/thmanyah-sans-light.woff2') format('woff2');
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahSans';
+  src: url('/assets/fonts/thmanyah/thmanyah-sans-regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahSans';
+  src: url('/assets/fonts/thmanyah/thmanyah-sans-medium.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahSans';
+  src: url('/assets/fonts/thmanyah/thmanyah-sans-bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahSans';
+  src: url('/assets/fonts/thmanyah/thmanyah-sans-black.woff2') format('woff2');
+  font-weight: 900; font-style: normal; font-display: swap;
+}
+
+/* ── Thmanyah Serif Display (big headings) ──────────────────────── */
+@font-face {
+  font-family: 'ThmanyahSerifDisplay';
+  src: url('/assets/fonts/thmanyah/thmanyah-display-regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahSerifDisplay';
+  src: url('/assets/fonts/thmanyah/thmanyah-display-medium.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahSerifDisplay';
+  src: url('/assets/fonts/thmanyah/thmanyah-display-bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahSerifDisplay';
+  src: url('/assets/fonts/thmanyah/thmanyah-display-black.woff2') format('woff2');
+  font-weight: 900; font-style: normal; font-display: swap;
+}
+
+/* ── Thmanyah Serif Text (articles / body) ──────────────────────── */
+@font-face {
+  font-family: 'ThmanyahSerifText';
+  src: url('/assets/fonts/thmanyah/thmanyah-text-regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahSerifText';
+  src: url('/assets/fonts/thmanyah/thmanyah-text-medium.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahSerifText';
+  src: url('/assets/fonts/thmanyah/thmanyah-text-bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}

@@ -1,0 +1,1 @@
+export { ChildMaterialsPage } from './ChildMaterialsPage'

@@ -1,0 +1,245 @@
+/* ── Font Faces ─────────────────────────────────────────────────── */
+@font-face {
+  font-family: 'ThmanyahSans';
+  src: url('/assets/fonts/thmanyah/thmanyah-sans-light.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahSans';
+  src: url('/assets/fonts/thmanyah/thmanyah-sans-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahSans';
+  src: url('/assets/fonts/thmanyah/thmanyah-sans-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahSans';
+  src: url('/assets/fonts/thmanyah/thmanyah-sans-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahSans';
+  src: url('/assets/fonts/thmanyah/thmanyah-sans-black.woff2') format('woff2');
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahDisplay';
+  src: url('/assets/fonts/thmanyah/thmanyah-display-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahDisplay';
+  src: url('/assets/fonts/thmanyah/thmanyah-display-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahDisplay';
+  src: url('/assets/fonts/thmanyah/thmanyah-display-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahDisplay';
+  src: url('/assets/fonts/thmanyah/thmanyah-display-black.woff2') format('woff2');
+  font-weight: 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahText';
+  src: url('/assets/fonts/thmanyah/thmanyah-text-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahText';
+  src: url('/assets/fonts/thmanyah/thmanyah-text-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ThmanyahText';
+  src: url('/assets/fonts/thmanyah/thmanyah-text-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* ── Dark Mode Variant ───────────────────────────────────────────── */
+/* Makes Tailwind dark: modifier respond to [data-theme="dark"] attr */
+@variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+/* ── Brand CSS Custom Properties — Light Mode ───────────────────── */
+:root {
+  /* Backgrounds */
+  --bg:              #f4fbf8;
+  --bg-alt:          #eaf6f1;
+  --surface:         #fbfefd;
+  --surface-soft:    #f7fcfa;
+  --card:            #fbfefd;
+  --card-hover:      #f5fbf8;
+
+  /* Text */
+  --ink:             #102322;
+  --ink-soft:        #2f4c49;
+  --muted:           #607875;
+  --muted-light:     #8ba09d;
+
+  /* Borders & Shadows */
+  --border:          rgba(13, 79, 79, 0.13);
+  --border-soft:     rgba(13, 79, 79, 0.07);
+  --shadow-sm:       0 1px 3px rgba(13, 79, 79, .06), 0 1px 2px rgba(16, 35, 34, .04);
+  --shadow-md:       0 6px 18px rgba(13, 79, 79, .10);
+  --shadow-lg:       0 12px 34px rgba(13, 79, 79, .14);
+
+  /* Brand Accent — TEAL */
+  --accent:          #0d4f4f;
+  --accent-2:        #1a6b5a;
+  --accent-mint:     #a8e6cf;
+  --accent-hover:    #0a4242;
+  --accent-soft:     rgba(13, 79, 79, .10);
+  --accent-soft-strong: rgba(13, 79, 79, .16);
+  --accent-rgb:      13, 79, 79;
+  --primary:         var(--accent);
+  --primary-rgb:     var(--accent-rgb);
+
+  /* Status Colors */
+  --success:         #16a34a;
+  --success-bg:      #f0fdf4;
+  --warning:         #d97706;
+  --warning-bg:      #fffbeb;
+  --danger:          #dc2626;
+  --danger-bg:       #fef2f2;
+  --info:            #0284c7;
+  --info-bg:         #f0f9ff;
+
+  /* Shapes */
+  --radius-xs:       0.375rem;
+  --radius-sm:       0.5rem;
+  --radius:          0.75rem;
+  --radius-lg:       1rem;
+  --radius-xl:       1.25rem;
+
+  /* Controls */
+  --control-height:     44px;
+  --control-height-sm:  36px;
+  --focus-ring:         0 0 0 3px rgba(var(--accent-rgb), .18);
+  --focus-ring-strong:  0 0 0 4px rgba(var(--accent-rgb), .20);
+  --disabled-opacity:   .62;
+  --table-head-bg:      rgba(13, 79, 79, .045);
+
+  /* Navigation */
+  --nav-bg:          rgba(251, 254, 253, 0.9);
+  --nav-border:      rgba(13, 79, 79, 0.10);
+
+  /* Transition */
+  --transition: background-color .2s ease, border-color .2s ease,
+                color .2s ease, box-shadow .2s ease,
+                transform .2s ease, opacity .2s ease;
+}
+
+/* ── Dark Mode Overrides ─────────────────────────────────────────── */
+[data-theme="dark"] {
+  --bg:              #0c1615;
+  --bg-alt:          #12211f;
+  --surface:         #142522;
+  --surface-soft:    #10201e;
+  --card:            #172a27;
+  --card-hover:      #1c332f;
+
+  --ink:             #e7f4ef;
+  --ink-soft:        #bdd4ce;
+  --muted:           #91aaa4;
+  --muted-light:     #718b85;
+
+  --border:          rgba(168, 230, 207, 0.14);
+  --border-soft:     rgba(168, 230, 207, 0.08);
+  --shadow-sm:       0 1px 3px rgba(2, 8, 7, .28);
+  --shadow-md:       0 6px 18px rgba(2, 8, 7, .36);
+  --shadow-lg:       0 12px 34px rgba(2, 8, 7, .46);
+
+  /* Accent lightens in dark mode */
+  --accent:          #2ab5a0;
+  --accent-hover:    #8edec3;
+  --accent-soft:     rgba(168, 230, 207, .12);
+  --accent-soft-strong: rgba(168, 230, 207, .18);
+  --accent-mint:     #a8e6cf;
+
+  --success-bg:      rgba(22, 163, 74, .12);
+  --warning-bg:      rgba(217, 119, 6, .12);
+  --danger-bg:       rgba(220, 38, 38, .12);
+  --info-bg:         rgba(2, 132, 199, .12);
+
+  --nav-bg:          rgba(12, 22, 21, 0.92);
+  --nav-border:      rgba(168, 230, 207, 0.10);
+  --table-head-bg:   rgba(168, 230, 207, .07);
+}
+
+/* ── Base Styles ─────────────────────────────────────────────────── */
+html {
+  font-family: 'ThmanyahSans', 'Cairo', 'DM Sans', system-ui, sans-serif;
+  color: var(--ink);
+  background-color: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  transition: background-color .2s ease, color .2s ease;
+}
+
+/* ── Tailwind Theme Extensions ───────────────────────────────────── */
+/* "inline" = Tailwind emits var() references, enabling dark-mode vars */
+@theme inline {
+  --font-sans:    'ThmanyahSans', 'Cairo', 'DM Sans', system-ui, sans-serif;
+  --font-display: 'ThmanyahDisplay', 'Cairo', system-ui, sans-serif;
+  --font-text:    'ThmanyahText', 'Cairo', system-ui, sans-serif;
+
+  /* Backgrounds */
+  --color-bg:           var(--bg);
+  --color-bg-alt:       var(--bg-alt);
+  --color-surface:      var(--surface);
+  --color-surface-soft: var(--surface-soft);
+  --color-card:         var(--card);
+  --color-card-hover:   var(--card-hover);
+
+  /* Text */
+  --color-ink:          var(--ink);
+  --color-ink-soft:     var(--ink-soft);
+  --color-muted:        var(--muted);
+  --color-muted-light:  var(--muted-light);
+
+  /* Brand */
+  --color-accent:       var(--accent);
+  --color-accent-2:     var(--accent-2);
+  --color-accent-mint:  var(--accent-mint);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-soft:  var(--accent-soft);
+  --color-accent-soft-strong: var(--accent-soft-strong);
+
+  /* Status */
+  --color-success:      var(--success);
+  --color-success-bg:   var(--success-bg);
+  --color-warning:      var(--warning);
+  --color-warning-bg:   var(--warning-bg);
+  --color-danger:       var(--danger);
+  --color-danger-bg:    var(--danger-bg);
+  --color-info:         var(--info);
+  --color-info-bg:      var(--info-bg);
+
+  /* Borders */
+  --color-border:       var(--border);
+  --color-border-soft:  var(--border-soft);
+  --color-nav-bg:       var(--nav-bg);
+
+  /* Radius — extends Tailwind's defaults */
+  --radius-xs: 0.375rem;
+}

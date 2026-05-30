@@ -1,0 +1,399 @@
+.book-sales-card,
+.book-dashboard-card,
+.book-checkout-card,
+.book-price-card,
+.book-locked-cta,
+.book-marketing-popup,
+.book-lovable-shell {
+  --book-navy: #08203a;
+  --book-teal: #008b86;
+  --book-teal-dark: #00556a;
+  --book-gold: #e6ad3f;
+  --book-paper: #f9f4e8;
+  --book-cream: #fff9ef;
+  --book-line: #d8e3df;
+  --book-muted: #44516a;
+  color: var(--book-navy);
+}
+
+.book-lovable-shell {
+  min-height: 100vh;
+  margin: -1.5rem 0;
+  padding: clamp(2rem, 5vw, 5rem) 0;
+  background:
+    radial-gradient(circle at 22% 16%, rgba(0, 139, 134, .20), transparent 28%),
+    radial-gradient(circle at 86% 22%, rgba(230, 173, 63, .20), transparent 28%),
+    linear-gradient(120deg, #effaf5 0%, #fbf8ee 48%, #fff1d8 100%);
+}
+
+.book-lovable-container {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.book-sales-hero {
+  display: grid;
+  grid-template-columns: minmax(300px, 448px) minmax(0, 1fr);
+  gap: clamp(3rem, 8vw, 7rem);
+  align-items: center;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.book-sales-hero::after {
+  display: none;
+}
+
+.book-sales-hero:not(.book-reference-hero) {
+  display: none;
+}
+
+.book-cover-frame {
+  position: relative;
+  justify-self: center;
+  width: min(100%, 448px);
+}
+
+.book-cover-frame img {
+  display: block;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 26px 65px rgba(8, 32, 58, .24);
+}
+
+.book-cover-frame::before {
+  content: "";
+  position: absolute;
+  inset: 5% auto 5% -3%;
+  width: 15%;
+  border-radius: 18px 0 0 18px;
+  background: linear-gradient(90deg, rgba(0, 54, 68, .35), transparent);
+  pointer-events: none;
+}
+
+.book-edition-tag {
+  position: absolute;
+  right: -20px;
+  bottom: -18px;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .58rem 1.05rem;
+  color: #08203a;
+  background: var(--book-gold);
+  border-radius: 999px;
+  box-shadow: 0 12px 26px rgba(8, 32, 58, .16);
+  font-weight: 800;
+  font-size: .84rem;
+}
+
+.book-hero-copy {
+  max-width: 560px;
+}
+
+.book-academy-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  margin-bottom: 1.55rem;
+  padding: .42rem .9rem;
+  color: #573700;
+  background: rgba(230, 173, 63, .18);
+  border-radius: 999px;
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.book-sales-hero h1 {
+  margin: 0 0 1.2rem;
+  color: var(--book-navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.4rem, 7vw, 5.85rem);
+  line-height: .94;
+  letter-spacing: 0;
+  font-weight: 800;
+}
+
+.book-sales-hero h1 .accent {
+  color: var(--book-teal);
+}
+
+.book-hero-ar {
+  margin: 0 0 1.6rem;
+  color: var(--book-navy);
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  font-weight: 700;
+  text-align: right;
+}
+
+.book-hero-description {
+  max-width: 560px;
+  color: var(--book-muted);
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.book-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .85rem;
+  margin-top: 1.8rem;
+}
+
+.book-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .75rem;
+  margin-top: 2rem;
+  max-width: 455px;
+}
+
+.book-stat-card {
+  min-height: 64px;
+  padding: .85rem 1rem;
+  text-align: center;
+  background: rgba(255, 255, 255, .60);
+  border: 1px solid var(--book-line);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(8, 32, 58, .05);
+}
+
+.book-stat-card i {
+  display: block;
+  margin-bottom: .4rem;
+  color: var(--book-teal);
+  font-size: 1.18rem;
+}
+
+.book-stat-card strong {
+  display: block;
+  color: var(--book-navy);
+  font-size: .82rem;
+}
+
+.book-note-panel,
+.book-section-panel {
+  margin-top: clamp(3rem, 7vw, 5.5rem);
+  padding: clamp(1.6rem, 4vw, 2.7rem);
+  background: rgba(255, 255, 255, .70);
+  border: 1px solid var(--book-line);
+  border-radius: 24px;
+  box-shadow: 0 20px 46px rgba(8, 32, 58, .08);
+}
+
+.book-note-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  border-top-color: rgba(230, 173, 63, .45);
+}
+
+.book-note-panel .kicker {
+  color: var(--book-gold);
+  font-size: .74rem;
+  font-weight: 800;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+}
+
+.book-note-panel h2,
+.book-section-panel h2 {
+  color: var(--book-navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  font-weight: 800;
+}
+
+.book-note-panel p {
+  color: var(--book-muted);
+  line-height: 1.85;
+}
+
+.book-note-panel [dir="rtl"] {
+  text-align: right;
+}
+
+.book-offer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .35rem .75rem;
+  border-radius: 999px;
+  background: rgba(11, 111, 115, .10);
+  color: var(--book-teal);
+  font-size: .82rem;
+  font-weight: 800;
+}
+
+.book-sales-card,
+.book-dashboard-card,
+.book-checkout-card,
+.book-price-card,
+.book-locked-cta {
+  background: rgba(255, 255, 255, .72);
+  border: 1px solid var(--book-line);
+  border-radius: 22px;
+  box-shadow: 0 18px 42px rgba(8, 32, 58, .08);
+}
+
+.book-price-badge {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .5rem;
+  padding: .55rem 1rem;
+  border-radius: 12px;
+  background: var(--book-navy);
+  color: #fff;
+  font-weight: 900;
+}
+
+.book-price-badge del {
+  color: rgba(255,255,255,.62);
+  font-size: .86rem;
+}
+
+.book-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.book-feature-card {
+  padding: 1rem;
+  border: 1px solid rgba(199, 146, 55, .22);
+  border-radius: 14px;
+  background: #fff;
+  height: 100%;
+}
+
+.book-feature-card i {
+  color: var(--book-teal);
+  font-size: 1.45rem;
+}
+
+.book-price-card {
+  padding: 1.3rem;
+  position: sticky;
+  top: 1rem;
+}
+
+.book-dashboard-card {
+  padding: 1.1rem;
+}
+
+.book-fixed-icon {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 1040;
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .72rem .95rem;
+  color: #fff;
+  background: var(--book-teal);
+  border: 0;
+  border-radius: 999px;
+  box-shadow: 0 12px 28px rgba(9, 38, 64, .24);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.book-fixed-icon:hover {
+  color: #fff;
+  background: #07545a;
+}
+
+.book-fixed-dismiss {
+  position: fixed;
+  right: 12px;
+  bottom: 64px;
+  z-index: 1041;
+  width: 24px;
+  height: 24px;
+  border: 0;
+  border-radius: 999px;
+  background: #fff;
+  color: #334155;
+  box-shadow: 0 6px 18px rgba(9, 38, 64, .18);
+}
+
+.book-sales-banner {
+  border: 1px solid rgba(199, 146, 55, .25);
+  background: #fff8ec;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.book-activation-status {
+  border-radius: 12px;
+  padding: .8rem 1rem;
+  background: rgba(199, 146, 55, .12);
+  color: #7a4d0b;
+  font-weight: 800;
+}
+
+.book-faq-section .accordion-button {
+  font-weight: 800;
+  color: var(--book-navy);
+}
+
+@media (max-width: 576px) {
+  .book-fixed-icon {
+    right: 12px;
+    bottom: 12px;
+    padding: .65rem .8rem;
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .book-sales-hero {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .book-hero-copy,
+  .book-hero-description,
+  .book-hero-stats {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .book-hero-ar {
+    text-align: center;
+  }
+
+  .book-hero-actions {
+    justify-content: center;
+  }
+
+  .book-note-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .book-lovable-shell {
+    padding-top: 2rem;
+  }
+
+  .book-sales-hero h1 {
+    font-size: clamp(3rem, 15vw, 4.2rem);
+  }
+
+  .book-hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .book-edition-tag {
+    right: 10px;
+  }
+}

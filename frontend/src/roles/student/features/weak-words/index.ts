@@ -1,0 +1,1 @@
+export { WeakWordsPage } from './WeakWordsPage'

@@ -1,0 +1,48 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "./"],
+      "description": "Read/write all project files in Rebuild Habiba Website/"
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "description": "Step-by-step reasoning before complex tasks"
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "description": "Persist decisions and patterns across sessions"
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@executeautomation/playwright-mcp-server"],
+      "description": "E2E browser testing — run after each feature"
+    }
+  },
+  "permissions": {
+    "allow": [
+      "Filesystem:read",
+      "Filesystem:write",
+      "Filesystem:create_directory",
+      "Filesystem:list",
+      "Filesystem:search",
+      "Memory:read",
+      "Memory:write",
+      "Playwright:navigate",
+      "Playwright:screenshot",
+      "Playwright:click",
+      "Playwright:fill",
+      "Playwright:evaluate"
+    ]
+  },
+  "project": {
+    "name": "Habiba Nabil Arabic Academy",
+    "source": "D:\\Habiba\\web + app\\New\\",
+    "destination": "D:\\Habiba\\web + app\\Rebuild Habiba Website\\",
+    "brand_color": "#0d4f4f",
+    "domain": "mshabibanabil.com",
+    "timezone": "Asia/Dubai"
+  }
+}

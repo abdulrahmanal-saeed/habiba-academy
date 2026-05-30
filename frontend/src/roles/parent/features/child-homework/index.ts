@@ -1,0 +1,1 @@
+export { ChildHomeworkPage } from './ChildHomeworkPage'

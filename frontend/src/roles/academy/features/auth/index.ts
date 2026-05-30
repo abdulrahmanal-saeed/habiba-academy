@@ -1,0 +1,1 @@
+export { AcademyLoginPage } from './AcademyLoginPage'

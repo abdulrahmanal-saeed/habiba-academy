@@ -1,0 +1,7 @@
+الباقي في Phase 13:
+
+❌ Sprint 13.3 — Student Portal UI Polish
+❌ Sprint 13.4 — Teacher Portal UI Polish
+❌ Sprint 13.5 — Mobile Responsiveness
+❌ Sprint 13.6 — RTL + Arabic Typography
+❌ Sprint 13.7 — Owner + Parent + Academy UI Polish

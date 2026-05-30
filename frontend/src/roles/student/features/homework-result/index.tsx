@@ -1,0 +1,1 @@
+export { HomeworkResultPage } from './HomeworkResultPage'

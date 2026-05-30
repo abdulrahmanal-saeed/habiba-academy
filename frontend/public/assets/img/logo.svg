@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Habiba Nabil Arabic Academy">
+  <title>Habiba Nabil — Arabic Academy</title>
+  <defs>
+    <linearGradient id="hnBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0d4f4f"/>
+      <stop offset="100%" stop-color="#1a6b5a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect width="512" height="512" rx="117" ry="117" fill="url(#hnBg)"/>
+
+  <!-- Diamond border 1 — rotated 45°, stronger -->
+  <rect x="82" y="82" width="348" height="348" rx="43" ry="43"
+        fill="none"
+        stroke="#a8e6cf" stroke-opacity="0.55" stroke-width="13"
+        transform="rotate(45 256 256)"/>
+
+  <!-- Diamond border 2 — rotated 22.5°, lighter -->
+  <rect x="82" y="82" width="348" height="348" rx="43" ry="43"
+        fill="none"
+        stroke="#a8e6cf" stroke-opacity="0.28" stroke-width="13"
+        transform="rotate(22.5 256 256)"/>
+
+  <!-- Arabic letter ض -->
+  <text x="256" y="256"
+        font-family="Cairo, 'Noto Sans Arabic', 'Segoe UI', Arial, sans-serif"
+        font-weight="800"
+        font-size="215"
+        fill="#a8e6cf"
+        text-anchor="middle"
+        dominant-baseline="central">ض</text>
+</svg>
