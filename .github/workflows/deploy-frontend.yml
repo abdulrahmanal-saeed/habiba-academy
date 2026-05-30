@@ -6,6 +6,7 @@ on:
     paths:
       - 'frontend/**'
       - '.github/workflows/deploy-frontend.yml'
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -38,8 +39,10 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
+          protocol: ftps
+          port: 21
           local-dir: frontend/dist/
-          server-dir: /public_html/
+          server-dir: ./public_html/
           exclude: |
             **/.git*
             **/.git/**

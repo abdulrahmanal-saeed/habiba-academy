@@ -6,6 +6,7 @@ on:
     paths:
       - 'backend/**'
       - '.github/workflows/deploy-backend.yml'
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -21,8 +22,10 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
+          protocol: ftps
+          port: 21
           local-dir: backend/
-          server-dir: /public_html/backend/
+          server-dir: ./public_html/backend/
           exclude: |
             **/.git*
             **/.git/**
