@@ -39,7 +39,9 @@
       "Bash(grep -l baseUrl tsconfig*.json)",
       "Bash(ls __TRACKED_VAR__/components)",
       "Bash(ls __TRACKED_VAR__/hooks)",
-      "Bash(Get-ChildItem *)"
+      "Bash(Get-ChildItem *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
